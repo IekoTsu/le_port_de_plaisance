@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifier un utilisateur</title>
+</head>
+<body>
+    <h1>Modifier un utilisateur</h1>
+    <p>Entrez l'identifiant de l'utilisateur</p>
+    <form id="userForm">
+        <label for="id"> ID de l'utilisateur </label>
+        <input type="text" id="id" name="id" required />
+        <button type="submit">Modifier l'utilisateur</button>
+    </form>
+    <a href="/dashboard">Retour au tableau de bord</a>
+
+    <script>
+        // Add a submit event listener to the form
+        document.getElementById('userForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting the traditional way
+            const userId = document.getElementById('id').value
+            if (userId) {
+                // Redirect the user to the "/:id/edit" URL
+                window.location.href = `/users/${userId}/edit`
+            } else {
+                alert('Please enter a valid User ID')
+            }
+        });
+    </script>
+</body>
+</html>

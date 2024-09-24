@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supprimer un utilisateur</title>
+</head>
+<body>
+    <h1>Supprimer un utilisateur</h1>
+    <p>Entrez l'ID de l'utilisateur à supprimer</p>
+    <form id="deleteUserForm">
+        <label for="id">ID de l'utilisateur:</label>
+        <input type="text" id="id" name="id" required />
+        <button type="submit">Supprimer l'utilisateur</button>
+    </form>
+
+    <a href="/dashboard">Retour au tableau de bord</a>
+
+    <script>
+        document.getElementById('deleteUserForm').addEventListener('submit', async function(event) {
+            event.preventDefault()
+
+            const userId = document.getElementById('id').value
+            
+
+            if (userId) {               
+                try {
+                    const response = await fetch(`/users/${userId}`, {
+                        method: 'DELETE',
+                    });
+                    if (response.ok) {
+                        window.location.href = '/dashboard'
+                    } else {
+                        const errorData = await response.json();
+                        
+                        if (errorData.errorKind === 'ObjectId') {
+                            alert('Format d\'identifiant utilisateur non valide. Veuillez vérifier et réessayer.');
+                        } else {
+                            alert('Utilisateur non trouvé');
+                        }
+                    }
+                } catch (error) {
+                    alert('Une erreur s\'est produite. Veuillez réessayer ultérieurement.')
+                }
+        }
+    })
+    </script>
+</body>
+</html>

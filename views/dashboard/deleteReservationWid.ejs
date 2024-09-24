@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supprimer une réservation</title>
+</head>
+<body>
+    <h1>Supprimer une réservation</h1>
+    <p>Entrez l'ID de la réservation à supprimer</p>
+    <form id="deleteReservationForm">
+        <label for="id">ID de réservation:</label>
+        <input type="text" id="id" name="id" required />
+        <button type="submit">Supprimer la réservation</button>
+    </form>
+
+    <a href="/dashboard">Retour au tableau de bord</a>
+
+    <script>
+        document.getElementById('deleteReservationForm').addEventListener('submit', async function(event) {
+            event.preventDefault()
+
+            const reservationId = document.getElementById('id').value
+            
+
+            if (reservationId) {               
+                try {
+                    const response = await fetch(`/catways/id/reservations/${reservationId}`, {
+                        method: 'DELETE',
+                    });
+                
+                    if (response.ok) {
+                        window.location.href = '/dashboard'
+                    } else {
+                        const errorData = await response.json();
+                        
+                        if (errorData.errorKind === 'ObjectId') {
+                            alert('Format d\'ID de réservation non valide. Veuillez vérifier et réessayer.');
+                        } else {
+                            alert('Réservation non trouvée');
+                        }
+                    }
+                } catch (error) {
+                    console.error('Error deleting user:', error)
+                    alert('Une erreur s\'est produite. Veuillez réessayer ultérieurement.')
+                }
+        } 
+    })
+    </script>
+</body>
+</html>
+ 

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails du catway</title>
+</head>
+<body>
+    <h1>Détails du catway</h1>
+    <p>Numéro de catway: <%= catway.catwayNumber %></p>
+    <p>Type: <%= catway.type %></p>
+    <p>État: <%= catway.catwayState %></p>
+    <p>Nom du bateau: <%= catway.boatName %></p>
+    <form action="/catways/<%= catway._id %>?_method=DELETE" method="POST">
+        <button type="submit">Supprimer</button>
+    </form><br>
+    <a href="/catways/<%= catway._id %>/edit">Edit</a><br>
+    <a href="/catways">Liste des catways</a><br>
+    <a href="/dashboard">Accéder au tableau de bord</a>
+</body>
+</html> 

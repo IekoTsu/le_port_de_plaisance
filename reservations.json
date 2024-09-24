@@ -1,0 +1,58 @@
+[
+    {
+        "catwayNumber": 101,
+        "clientName": "John Doe",
+        "boatName": "The Odyssey",
+        "checkIn": "2024-09-25",
+        "checkOut": "2024-09-30"
+    },
+    {
+        "catwayNumber": 102,
+        "clientName": "Alice Smith",
+        "boatName": "Sea Breeze",
+        "checkIn": "2024-10-01",
+        "checkOut": "2024-10-10"
+    },
+    {
+        "catwayNumber": 103,
+        "clientName": "Bob Johnson",
+        "boatName": "Wave Runner",
+        "checkIn": "2024-10-05",
+        "checkOut": "2024-10-15"
+    },
+    {
+        "catwayNumber": 104,
+        "clientName": "Charlie Brown",
+        "boatName": "Nautical Dream",
+        "checkIn": "2024-10-20",
+        "checkOut": "2024-10-25"
+    },
+    {
+        "catwayNumber": 105,
+        "clientName": "Emily Davis",
+        "boatName": "The Voyager",
+        "checkIn": "2024-11-01",
+        "checkOut": "2024-11-05"
+    },
+    {
+        "catwayNumber": 106,
+        "clientName": "Frank White",
+        "boatName": "Mystic Sea",
+        "checkIn": "2024-11-10",
+        "checkOut": "2024-11-15"
+    },
+    {
+        "catwayNumber": 107,
+        "clientName": "Grace Lee",
+        "boatName": "Adventurer",
+        "checkIn": "2024-12-01",
+        "checkOut": "2024-12-05"
+    },
+    {
+        "catwayNumber": 108,
+        "clientName": "Henry Adams",
+        "boatName": "Serenity Now",
+        "checkIn": "2024-12-10",
+        "checkOut": "2024-12-15"
+    }
+]

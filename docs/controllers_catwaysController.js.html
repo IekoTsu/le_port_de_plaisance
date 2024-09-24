@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>controllers/catwaysController.js - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <input type="text" id="nav-search" placeholder="Search" />
+    
+    
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-Catway.html">Catway</a></li><li><a href="module-CatwaysRoutes.html">CatwaysRoutes</a></li><li><a href="module-CatwaysServices.html">CatwaysServices</a><ul class='methods'><li data-type='method'><a href="module-CatwaysServices.html#~addCatway">addCatway</a></li><li data-type='method'><a href="module-CatwaysServices.html#~deleteCatway">deleteCatway</a></li><li data-type='method'><a href="module-CatwaysServices.html#~getAllCatways">getAllCatways</a></li><li data-type='method'><a href="module-CatwaysServices.html#~getCatwayById">getCatwayById</a></li><li data-type='method'><a href="module-CatwaysServices.html#~updateCatway">updateCatway</a></li></ul></li><li><a href="module-DashboardRoutes.html">DashboardRoutes</a></li><li><a href="module-HomeRoutes.html">HomeRoutes</a></li><li><a href="module-JwtMiddleware.html">JwtMiddleware</a><ul class='methods'><li data-type='method'><a href="module-JwtMiddleware.html#~checkJWT">checkJWT</a></li></ul></li><li><a href="module-Reservation.html">Reservation</a></li><li><a href="module-ReservationsRoutes.html">ReservationsRoutes</a></li><li><a href="module-ReservationsServices.html">ReservationsServices</a><ul class='methods'><li data-type='method'><a href="module-ReservationsServices.html#~creatReservation">creatReservation</a></li><li data-type='method'><a href="module-ReservationsServices.html#~deleteReservation">deleteReservation</a></li><li data-type='method'><a href="module-ReservationsServices.html#~getAllCatwayReservations">getAllCatwayReservations</a></li><li data-type='method'><a href="module-ReservationsServices.html#~getAllReservation">getAllReservation</a></li><li data-type='method'><a href="module-ReservationsServices.html#~getReservationById">getReservationById</a></li></ul></li><li><a href="module-User.html">User</a></li><li><a href="module-UsersServices.html">UsersServices</a><ul class='methods'><li data-type='method'><a href="module-UsersServices.html#~addUser">addUser</a></li><li data-type='method'><a href="module-UsersServices.html#~deleteUser">deleteUser</a></li><li data-type='method'><a href="module-UsersServices.html#~findUserById">findUserById</a></li><li data-type='method'><a href="module-UsersServices.html#~updateUser">updateUser</a></li></ul></li><li><a href="module-app.html">app</a></li><li><a href="module-catwaysController.html">catwaysController</a><ul class='methods'><li data-type='method'><a href="module-catwaysController.html#~add">add</a></li><li data-type='method'><a href="module-catwaysController.html#~delete">delete</a></li><li data-type='method'><a href="module-catwaysController.html#~edit">edit</a></li><li data-type='method'><a href="module-catwaysController.html#~getAll">getAll</a></li><li data-type='method'><a href="module-catwaysController.html#~getById">getById</a></li><li data-type='method'><a href="module-catwaysController.html#~renderAddforum">renderAddforum</a></li><li data-type='method'><a href="module-catwaysController.html#~update">update</a></li></ul></li><li><a href="module-dashboardController.html">dashboardController</a><ul class='methods'><li data-type='method'><a href="module-dashboardController.html#~renderDashboard">renderDashboard</a></li><li data-type='method'><a href="module-dashboardController.html#~renderDeleteCatwayWid">renderDeleteCatwayWid</a></li><li data-type='method'><a href="module-dashboardController.html#~renderDeleteReservationWid">renderDeleteReservationWid</a></li><li data-type='method'><a href="module-dashboardController.html#~renderDeleteUserWid">renderDeleteUserWid</a></li><li data-type='method'><a href="module-dashboardController.html#~renderEditCatwayWid">renderEditCatwayWid</a></li><li data-type='method'><a href="module-dashboardController.html#~renderEditUserWid">renderEditUserWid</a></li><li data-type='method'><a href="module-dashboardController.html#~renderGetCatwayDetailsWid">renderGetCatwayDetailsWid</a></li><li data-type='method'><a href="module-dashboardController.html#~renderGetReservationDetailsWid">renderGetReservationDetailsWid</a></li></ul></li><li><a href="module-homeController.html">homeController</a><ul class='methods'><li data-type='method'><a href="module-homeController.html#~renderHome">renderHome</a></li></ul></li><li><a href="module-reservationsController.html">reservationsController</a><ul class='methods'><li data-type='method'><a href="module-reservationsController.html#~add">add</a></li><li data-type='method'><a href="module-reservationsController.html#~delete">delete</a></li><li data-type='method'><a href="module-reservationsController.html#~getAll">getAll</a></li><li data-type='method'><a href="module-reservationsController.html#~getAllOfCatway">getAllOfCatway</a></li><li data-type='method'><a href="module-reservationsController.html#~getbyId">getbyId</a></li><li data-type='method'><a href="module-reservationsController.html#~renderAddForm">renderAddForm</a></li></ul></li><li><a href="module-usersController.html">usersController</a><ul class='methods'><li data-type='method'><a href="module-usersController.html#~add">add</a></li><li data-type='method'><a href="module-usersController.html#~authenticate">authenticate</a></li><li data-type='method'><a href="module-usersController.html#~delete">delete</a></li><li data-type='method'><a href="module-usersController.html#~edit">edit</a></li><li data-type='method'><a href="module-usersController.html#~getById">getById</a></li><li data-type='method'><a href="module-usersController.html#~renderCreationPage">renderCreationPage</a></li><li data-type='method'><a href="module-usersController.html#~update">update</a></li></ul></li><li><a href="module-usersRoutes.html">usersRoutes</a></li></ul>
+    
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">controllers/catwaysController.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>const catwayService = require('../services/catways');
+
+/**
+ * @module catwaysController
+ */
+
+/**
+ * Get all catways and render the list view.
+ * 
+ * @function getAll
+ * @param {Object} req - The Express request object.
+ * @param {Object} res - The Express response object.
+ * @returns {void}
+ * 
+ * @example
+ * // Usage in route
+ * router.get('/', private.checkJWT, controller.getAll);
+ */
+exports.getAll = async (req, res) => {
+    try {
+        const catways = await catwayService.getAllCatways();
+        const message = req.query.message;
+        
+        if (!catways || catways.length === 0) {
+            return res.status(404).render('catways/list', { catways: [], message: message + "&lt;br>Aucun catway trouvée" });
+        }
+        
+        return res.render('catways/list', { catways, message });
+    } catch (error) {
+        return res.status(500).json({ message: 'Internal Server Error', error });
+    }
+};
+
+/**
+ * Get a catway by ID and render the details view.
+ * 
+ * @function getById
+ * @param {Object} req - The Express request object.
+ * @param {Object} res - The Express response object.
+ * @returns {void}
+ * 
+ * @example
+ * // Usage in route
+ * router.get('/:id', private.checkJWT, controller.getById);
+ */
+exports.getById = async (req, res) => {
+    const id = req.params.id;
+
+    try {
+        const catway = await catwayService.getCatwayById(id);
+
+        if (!catway) {
+            return res.status(404).render('error/error', { errors: ['Catway non trouvé'] });
+        }
+        
+        return res.status(200).render('catways/details', { catway });
+    } catch (error) {
+        if (error.kind === "ObjectId") {
+            return res.status(404).render('error/error', { errors: ['Entrez un identifiant valide'] });
+        }
+
+        return res.status(500).json({ message: 'Internal Server Error', error });
+    }
+};
+
+/**
+ * Add a new catway and redirect to the list view.
+ * 
+ * @function add
+ * @param {Object} req - The Express request object.
+ * @param {Object} res - The Express response object.
+ * @returns {void}
+ * 
+ * @example
+ * // Usage in route
+ * router.post('/', private.checkJWT, controller.add);
+ */
+exports.add = async (req, res) => {
+    const catwayData = {
+        catwayNumber: req.body.catwayNumber,
+        type: req.body.type,
+        catwayState: req.body.catwayState,
+        boatName: req.body.boatName
+    };
+
+    try {
+        const newCatway = await catwayService.addCatway(catwayData);
+        return res.redirect(`/catways?message=Catway ${newCatway.boatName} a été créé avec succès`);
+    } catch (error) {
+        // Check if the error is a Mongoose validation error
+        if (error.name === 'ValidationError') {
+            const errors = Object.values(error.errors).map(e => e.message);
+            return res.status(400).render('error/error', { errors });
+
+        // Handle duplicate key error 
+        } else if (error.code === 11000){
+            // Mongoose uses code 11000 for duplicate key errors
+            return res.status(400).render('error/error', { errors : ['Ce numéro de catway existe déjà'] });
+        }
+
+        return res.status(500).json({ message: 'Internal Server Error', error });
+    }
+};
+
+/**
+ * Render the form to add a new catway.
+ * 
+ * @function renderAddforum
+ * @param {Object} req - The Express request object.
+ * @param {Object} res - The Express response object.
+ * @returns {void} 
+ * 
+ * @example
+ * // Usage in route
+ * router.get('/add', private.checkJWT, controller.renderAddforum);
+ */
+exports.renderAddforum = async (req, res) => {
+    try {
+        return res.status(200).render('catways/add');
+    } catch (error) {
+        return res.status(500).json({ message: 'Internal Server Error', error });
+    }
+};
+
+/**
+ * Update an existing catway and render the edit view.
+ * 
+ * @function update
+ * @param {Object} req - The Express request object.
+ * @param {Object} res - The Express response object.
+ * @returns {void}
+ * 
+ * @example
+ * // Usage in route
+ * router.put('/:id', private.checkJWT, controller.update);
+ */
+exports.update = async (req, res) => {
+    const id = req.params.id;
+
+    try {
+        const updatedCatway = await catwayService.updateCatway(id, req.body);
+
+        if (!updatedCatway) {
+            return res.status(404).json('Catway non trouvé');
+        }
+
+        return res.status(200).render('catways/edit', { catway: updatedCatway, message: 'Catway mis à jour avec succès' });
+    } catch (error) {
+        if (error.name === 'ValidationError') {
+            const errors = Object.values(error.errors).map(e => e.message);
+            return res.status(400).render('error/error', { errors });
+        }
+
+        return res.status(500).json({ message: 'Internal Server Error', error });
+    }
+};
+
+/**
+ * Render the form to edit an existing catway.
+ * 
+ * @function edit
+ * @param {Object} req - The Express request object.
+ * @param {Object} res - The Express response object.
+ * @returns {void}
+ * 
+ * @example
+ * // Usage in route
+ * router.get('/:id/edit', private.checkJWT, controller.edit);
+ */
+exports.edit = async (req, res) => {
+    const id = req.params.id;
+
+    try {
+        const catway = await catwayService.getCatwayById(id);
+
+        if (!catway) {
+            return res.status(404).render('error/error', { errors: ['Catway non trouvé'] });
+        }
+
+        return res.render('catways/edit', { catway });
+    } catch (error) {
+        if (error.kind === "ObjectId") {
+            return res.status(400).render('error/error', { errors: ['Entrez un identifiant valide'] });
+        }
+        return res.status(500).json({ message: 'Internal Server Error', error });
+    }
+};
+
+/**
+ * Delete a catway by ID and redirect to the list view.
+ * 
+ * @function delete
+ * @param {Object} req - The Express request object.
+ * @param {Object} res - The Express response object.
+ * @returns {void}
+ * 
+ * @example
+ * // Usage in route
+ * router.delete('/:id', private.checkJWT, controller.delete);
+ */
+exports.delete = async (req, res) => {
+    const id = req.params.id;
+    
+    try {
+        const catway = await catwayService.deleteCatway(id);
+        
+        req.session.message = `Catway ${catway.boatName} a été supprimé avec succès`;
+
+        console.log(req);
+        
+        
+        
+        if (req.headers.referer.includes('dashboard')) {
+            return res.status(200).json({ message: req.session.message });
+        }
+        
+
+        return res.status(200).redirect(`/catways?message=${req.session.message}`);
+    } catch (error) {
+        if (error.kind === "ObjectId") {
+            return res.status(400).json({ errorKind: error.kind });
+        }
+        
+        return res.status(500).json({ message: 'Internal Server Error', error });
+    }
+};
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Tue Sep 24 2024 17:08:23 GMT+0200 (Central European Summer Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+<script src="scripts/search.js" defer></script>
+
+
+
+</body>
+</html>

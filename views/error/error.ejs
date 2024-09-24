@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erreur</title>
+</head>
+<body>
+    <main>
+        <h1>Erreur</h1>
+
+        <% if (errors && errors.length > 0) { %>
+            <div class="error-messages">
+                <ul>
+                    <% errors.forEach(function(error) { %>
+                        <li><%= error %></li>
+                    <% }) %>
+                </ul>
+            </div>
+        <% } %>
+        <button onclick="history.back()">Retourner</button>
+    </main>
+
+</body>
+</html>

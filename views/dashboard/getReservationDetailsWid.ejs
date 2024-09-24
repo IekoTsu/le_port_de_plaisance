@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obtenir les détails de la réservation</title>
+</head>
+<body>
+    <h1>Obtenir les détails de la réservation</h1>
+    <p>Entrez l'identifiant de la réservation</p>
+    <form id="reservationForm">
+        <label for="id"> identifiant de réservation </label>
+        <input type="text" id="id" name="id" required />
+        <button type="submit">Obtenir les détails de la réservation</button>
+    </form>
+    <a href="/dashboard">Retour au tableau de bord</a>
+
+    <script>
+        // Add a submit event listener to the form
+        document.getElementById('reservationForm').addEventListener('submit', function(event) {
+            event.preventDefault()
+            const reservationId = document.getElementById('id').value
+            if (reservationId) {
+                window.location.href = `/catways/id/reservations/${reservationId}`
+            } else {
+                alert('Veuillez saisir un identifiant de réservation valide')
+            }
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,62 @@
+[
+    {
+        "catwayNumber": 101,
+        "type": "long",
+        "catwayState": "available",
+        "boatName": "Serenity"
+    },
+    {
+        "catwayNumber": 102,
+        "type": "short",
+        "catwayState": "occupied",
+        "boatName": "Eagle"
+    },
+    {
+        "catwayNumber": 103,
+        "type": "long",
+        "catwayState": "maintenance",
+        "boatName": "Whisper"
+    },
+    {
+        "catwayNumber": 104,
+        "type": "short",
+        "catwayState": "available",
+        "boatName": "Voyager"
+    },
+    {
+        "catwayNumber": 105,
+        "type": "long",
+        "catwayState": "occupied",
+        "boatName": "Odyssey"
+    },
+    {
+        "catwayNumber": 106,
+        "type": "short",
+        "catwayState": "available",
+        "boatName": "Mystique"
+    },
+    {
+        "catwayNumber": 107,
+        "type": "long",
+        "catwayState": "available",
+        "boatName": "Tranquility"
+    },
+    {
+        "catwayNumber": 108,
+        "type": "short",
+        "catwayState": "occupied",
+        "boatName": "Mariner"
+    },
+    {
+        "catwayNumber": 109,
+        "type": "long",
+        "catwayState": "occupied",
+        "boatName": "Explorer"
+    },
+    {
+        "catwayNumber": 110,
+        "type": "short",
+        "catwayState": "available",
+        "boatName": "Seafarer"
+    }
+]

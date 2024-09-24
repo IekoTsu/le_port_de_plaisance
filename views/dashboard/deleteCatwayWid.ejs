@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supprimer un catway</title>
+</head>
+<body>
+    <h1>Supprimer un catway</h1>
+    <p>Entrez l'ID du catway à supprimer</p>
+    <form id="deleteCatwayForm">
+        <label for="id">ID de catway:</label>
+        <input type="text" id="id" name="id" required />
+        <button type="submit">Supprimer le catway</button>
+    </form>
+
+    <a href="/dashboard">Retour au tableau de bord</a>
+
+    <script>
+        document.getElementById('deleteCatwayForm').addEventListener('submit', async function(event) {
+            event.preventDefault()
+
+            const catwayId = document.getElementById('id').value
+
+            if (catwayId) {               
+                try {
+                    const response = await fetch(`/catways/${catwayId}`, {
+                        method: 'DELETE',
+                    })
+                    
+                    if (response.ok) {
+                        window.location.href = '/dashboard'
+                    } else {
+
+                        const errorData = await response.json();
+                        
+                        if (errorData.errorKind === 'ObjectId') {
+                            alert('Format d\'identifiant Catway non valide. Veuillez vérifier et réessayer.');
+                        } else {
+                            alert('Catway non trouvé');
+                        }
+                    }
+
+                } catch (error) {  
+                    console.error('Error deleting catway:', error)
+                    alert('Une erreur s\'est produite. Veuillez réessayer ultérieurement.')
+                }
+        }
+    })
+    </script>
+</body>
+</html>

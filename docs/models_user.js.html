@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>models/user.js - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <input type="text" id="nav-search" placeholder="Search" />
+    
+    
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-Catway.html">Catway</a></li><li><a href="module-CatwaysRoutes.html">CatwaysRoutes</a></li><li><a href="module-CatwaysServices.html">CatwaysServices</a><ul class='methods'><li data-type='method'><a href="module-CatwaysServices.html#~addCatway">addCatway</a></li><li data-type='method'><a href="module-CatwaysServices.html#~deleteCatway">deleteCatway</a></li><li data-type='method'><a href="module-CatwaysServices.html#~getAllCatways">getAllCatways</a></li><li data-type='method'><a href="module-CatwaysServices.html#~getCatwayById">getCatwayById</a></li><li data-type='method'><a href="module-CatwaysServices.html#~updateCatway">updateCatway</a></li></ul></li><li><a href="module-DashboardRoutes.html">DashboardRoutes</a></li><li><a href="module-HomeRoutes.html">HomeRoutes</a></li><li><a href="module-JwtMiddleware.html">JwtMiddleware</a><ul class='methods'><li data-type='method'><a href="module-JwtMiddleware.html#~checkJWT">checkJWT</a></li></ul></li><li><a href="module-Reservation.html">Reservation</a></li><li><a href="module-ReservationsRoutes.html">ReservationsRoutes</a></li><li><a href="module-ReservationsServices.html">ReservationsServices</a><ul class='methods'><li data-type='method'><a href="module-ReservationsServices.html#~creatReservation">creatReservation</a></li><li data-type='method'><a href="module-ReservationsServices.html#~deleteReservation">deleteReservation</a></li><li data-type='method'><a href="module-ReservationsServices.html#~getAllCatwayReservations">getAllCatwayReservations</a></li><li data-type='method'><a href="module-ReservationsServices.html#~getAllReservation">getAllReservation</a></li><li data-type='method'><a href="module-ReservationsServices.html#~getReservationById">getReservationById</a></li></ul></li><li><a href="module-User.html">User</a></li><li><a href="module-UsersServices.html">UsersServices</a><ul class='methods'><li data-type='method'><a href="module-UsersServices.html#~addUser">addUser</a></li><li data-type='method'><a href="module-UsersServices.html#~deleteUser">deleteUser</a></li><li data-type='method'><a href="module-UsersServices.html#~findUserById">findUserById</a></li><li data-type='method'><a href="module-UsersServices.html#~updateUser">updateUser</a></li></ul></li><li><a href="module-app.html">app</a></li><li><a href="module-catwaysController.html">catwaysController</a><ul class='methods'><li data-type='method'><a href="module-catwaysController.html#~add">add</a></li><li data-type='method'><a href="module-catwaysController.html#~delete">delete</a></li><li data-type='method'><a href="module-catwaysController.html#~edit">edit</a></li><li data-type='method'><a href="module-catwaysController.html#~getAll">getAll</a></li><li data-type='method'><a href="module-catwaysController.html#~getById">getById</a></li><li data-type='method'><a href="module-catwaysController.html#~renderAddforum">renderAddforum</a></li><li data-type='method'><a href="module-catwaysController.html#~update">update</a></li></ul></li><li><a href="module-dashboardController.html">dashboardController</a><ul class='methods'><li data-type='method'><a href="module-dashboardController.html#~renderDashboard">renderDashboard</a></li><li data-type='method'><a href="module-dashboardController.html#~renderDeleteCatwayWid">renderDeleteCatwayWid</a></li><li data-type='method'><a href="module-dashboardController.html#~renderDeleteReservationWid">renderDeleteReservationWid</a></li><li data-type='method'><a href="module-dashboardController.html#~renderDeleteUserWid">renderDeleteUserWid</a></li><li data-type='method'><a href="module-dashboardController.html#~renderEditCatwayWid">renderEditCatwayWid</a></li><li data-type='method'><a href="module-dashboardController.html#~renderEditUserWid">renderEditUserWid</a></li><li data-type='method'><a href="module-dashboardController.html#~renderGetCatwayDetailsWid">renderGetCatwayDetailsWid</a></li><li data-type='method'><a href="module-dashboardController.html#~renderGetReservationDetailsWid">renderGetReservationDetailsWid</a></li></ul></li><li><a href="module-homeController.html">homeController</a><ul class='methods'><li data-type='method'><a href="module-homeController.html#~renderHome">renderHome</a></li></ul></li><li><a href="module-reservationsController.html">reservationsController</a><ul class='methods'><li data-type='method'><a href="module-reservationsController.html#~add">add</a></li><li data-type='method'><a href="module-reservationsController.html#~delete">delete</a></li><li data-type='method'><a href="module-reservationsController.html#~getAll">getAll</a></li><li data-type='method'><a href="module-reservationsController.html#~getAllOfCatway">getAllOfCatway</a></li><li data-type='method'><a href="module-reservationsController.html#~getbyId">getbyId</a></li><li data-type='method'><a href="module-reservationsController.html#~renderAddForm">renderAddForm</a></li></ul></li><li><a href="module-usersController.html">usersController</a><ul class='methods'><li data-type='method'><a href="module-usersController.html#~add">add</a></li><li data-type='method'><a href="module-usersController.html#~authenticate">authenticate</a></li><li data-type='method'><a href="module-usersController.html#~delete">delete</a></li><li data-type='method'><a href="module-usersController.html#~edit">edit</a></li><li data-type='method'><a href="module-usersController.html#~getById">getById</a></li><li data-type='method'><a href="module-usersController.html#~renderCreationPage">renderCreationPage</a></li><li data-type='method'><a href="module-usersController.html#~update">update</a></li></ul></li><li><a href="module-usersRoutes.html">usersRoutes</a></li></ul>
+    
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">models/user.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>const mongoose = require('mongoose');
+const bcrypt = require('bcrypt');
+const Schema = mongoose.Schema;
+
+/**
+ * User model for MongoDB using Mongoose.
+ * 
+ * This model represents users in the application, and includes validation and hashing for secure password storage.
+ * 
+ * @module User
+ * 
+ */
+
+/**
+ * User schema representing a user in the application.
+ * 
+ * This schema includes user details such as name, email, and hashed password. 
+ * It also includes validation for these fields and automatically hashes the password before saving the user to the database.
+ * 
+ * @typedef {Object} User
+ * @property {string} name - The full name of the user, which must contain only alphabetic characters.
+ * @property {string} email - The unique email address of the user, validated against a standard email format.
+ * @property {string} password - The hashed password of the user, stored securely after being hashed using bcrypt.
+ * 
+ * @example
+ * const exampleUser = {
+ *   name: 'JohnDoe',
+ *   email: 'john@example.com',
+ *   password: 'hashedpassword123'
+ * };
+ * 
+ * 
+ */
+const userSchema = new Schema({
+    /**
+     * The full name of the user.
+     * This field must contain only alphabetic characters.
+     * 
+     * @type {string}
+     * @required
+     * @trim
+     * @minlength 3
+     * @maxlength 50
+     * @validate {validator: nameValidator, message: 'Name must contain only letters.'}
+     * @example 'JohnDoe'
+     */
+    name: {
+        type: String,
+        trim: true,
+        required: [true, 'Le nom est obligatoire'],
+        minlength: [3, 'Le nom doit comporter au moins 3 caractères'],
+        maxlength: [50, 'Le nom ne peut pas dépasser 50 caractères'],
+        validate: {
+            validator: function(v) {
+                // Regex to ensure the name contains only letters (upper and lower case)
+                return /^[A-Za-z]+$/.test(v);
+            },
+            message: props => `${props.value} n'est pas valide ! Le nom ne doit contenir que des lettres.`
+        }
+    },
+    /**
+     * The unique email address of the user.
+     * This is validated against a standard email format.
+     * 
+     * @type {string}
+     * @required
+     * @trim
+     * @unique
+     * @validate {validator: emailValidator, message: 'Email is not valid.'}
+     * @example 'john@example.com'
+     */
+    email: {
+        type: String,
+        unique: true,
+        required: [true, 'L\'email est obligatoire'],
+        trim: true,
+        validate: {
+            validator: function(v) {
+                return /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(v);
+            },
+            message: props => `${props.value} n'est pas une adresse email valide !`
+        }
+    },
+    /**
+     * The password for the user.
+     * The password is hashed before being stored in the database.
+     * 
+     * @type {string}
+     * @required
+     * @trim
+     * @minlength 6
+     * @example 'mypassword123'
+     */
+    password: { 
+        type: String,
+        trim: true,
+        required: [true, 'Le mot de passe est requis'],
+        minlength: [6, 'Le mot de passe doit comporter au moins 6 caractères']
+    }
+}, {
+    // Automatically adds createdAt and updatedAt timestamps
+    timestamps: true
+});
+
+/**
+ * Middleware that hashes the user's password before saving to the database.
+ * 
+ * This middleware is triggered when the password is created or modified. It uses bcrypt to hash the password.
+ * 
+ * @param {Function} next - The callback to move to the next middleware in the stack.
+ * 
+ * @example
+ * const newUser = new User({
+ *   name: 'JohnDoe',
+ *   email: 'john@example.com',
+ *   password: 'mypassword123'
+ * });
+ * await newUser.save(); // The password will be hashed before saving
+ */
+userSchema.pre('save', async function(next) {
+    const user = this;
+
+    // If the password field has not been modified, skip hashing
+    if (!user.isModified('password')) {
+        return next();
+    }
+
+    try {
+        // Hash the password with a salt factor of 10
+        const hashedPassword = await bcrypt.hash(user.password, 10);
+        user.password = hashedPassword;
+        next();
+    } catch (err) {
+        next(err);
+    }
+});
+
+module.exports = mongoose.model('User', userSchema);
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Tue Sep 24 2024 17:08:23 GMT+0200 (Central European Summer Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+<script src="scripts/search.js" defer></script>
+
+
+
+</body>
+</html>

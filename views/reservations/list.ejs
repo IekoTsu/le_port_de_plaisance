@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List des réservations</title>
+</head>
+<body>
+    <h1>Toutes les réservations</h1>
+    <% if (reservations.length === 0) { %>
+        <p>Aucune réservation trouvée.</p>
+    <% } else { %>
+        <ul>
+            <% reservations.forEach(reservation => { %>
+                <li>
+                    <strong>Client Name:</strong> <%= reservation.clientName %> <br>
+                    <strong>Boat Name:</strong> <%= reservation.boatName %> <br>
+                    <strong>Check-In:</strong> <%= reservation.checkIn %> <br>
+                    <strong>Check-Out:</strong> <%= reservation.checkOut %> <br>
+                    <a href="/catways/id/reservations/<%= reservation.id %>">Voir plus de détails</a>
+                </li>
+            <% }) %>
+        </ul>
+    <% } %>
+    <a href="/dashboard">Accéder au tableau de bord</a>
+</body>
+</html>

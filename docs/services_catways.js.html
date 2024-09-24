@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>services/catways.js - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <input type="text" id="nav-search" placeholder="Search" />
+    
+    
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-Catway.html">Catway</a></li><li><a href="module-CatwaysRoutes.html">CatwaysRoutes</a></li><li><a href="module-CatwaysServices.html">CatwaysServices</a><ul class='methods'><li data-type='method'><a href="module-CatwaysServices.html#~addCatway">addCatway</a></li><li data-type='method'><a href="module-CatwaysServices.html#~deleteCatway">deleteCatway</a></li><li data-type='method'><a href="module-CatwaysServices.html#~getAllCatways">getAllCatways</a></li><li data-type='method'><a href="module-CatwaysServices.html#~getCatwayById">getCatwayById</a></li><li data-type='method'><a href="module-CatwaysServices.html#~updateCatway">updateCatway</a></li></ul></li><li><a href="module-DashboardRoutes.html">DashboardRoutes</a></li><li><a href="module-HomeRoutes.html">HomeRoutes</a></li><li><a href="module-JwtMiddleware.html">JwtMiddleware</a><ul class='methods'><li data-type='method'><a href="module-JwtMiddleware.html#~checkJWT">checkJWT</a></li></ul></li><li><a href="module-Reservation.html">Reservation</a></li><li><a href="module-ReservationsRoutes.html">ReservationsRoutes</a></li><li><a href="module-ReservationsServices.html">ReservationsServices</a><ul class='methods'><li data-type='method'><a href="module-ReservationsServices.html#~creatReservation">creatReservation</a></li><li data-type='method'><a href="module-ReservationsServices.html#~deleteReservation">deleteReservation</a></li><li data-type='method'><a href="module-ReservationsServices.html#~getAllCatwayReservations">getAllCatwayReservations</a></li><li data-type='method'><a href="module-ReservationsServices.html#~getAllReservation">getAllReservation</a></li><li data-type='method'><a href="module-ReservationsServices.html#~getReservationById">getReservationById</a></li></ul></li><li><a href="module-User.html">User</a></li><li><a href="module-UsersServices.html">UsersServices</a><ul class='methods'><li data-type='method'><a href="module-UsersServices.html#~addUser">addUser</a></li><li data-type='method'><a href="module-UsersServices.html#~deleteUser">deleteUser</a></li><li data-type='method'><a href="module-UsersServices.html#~findUserById">findUserById</a></li><li data-type='method'><a href="module-UsersServices.html#~updateUser">updateUser</a></li></ul></li><li><a href="module-app.html">app</a></li><li><a href="module-catwaysController.html">catwaysController</a><ul class='methods'><li data-type='method'><a href="module-catwaysController.html#~add">add</a></li><li data-type='method'><a href="module-catwaysController.html#~delete">delete</a></li><li data-type='method'><a href="module-catwaysController.html#~edit">edit</a></li><li data-type='method'><a href="module-catwaysController.html#~getAll">getAll</a></li><li data-type='method'><a href="module-catwaysController.html#~getById">getById</a></li><li data-type='method'><a href="module-catwaysController.html#~renderAddforum">renderAddforum</a></li><li data-type='method'><a href="module-catwaysController.html#~update">update</a></li></ul></li><li><a href="module-dashboardController.html">dashboardController</a><ul class='methods'><li data-type='method'><a href="module-dashboardController.html#~renderDashboard">renderDashboard</a></li><li data-type='method'><a href="module-dashboardController.html#~renderDeleteCatwayWid">renderDeleteCatwayWid</a></li><li data-type='method'><a href="module-dashboardController.html#~renderDeleteReservationWid">renderDeleteReservationWid</a></li><li data-type='method'><a href="module-dashboardController.html#~renderDeleteUserWid">renderDeleteUserWid</a></li><li data-type='method'><a href="module-dashboardController.html#~renderEditCatwayWid">renderEditCatwayWid</a></li><li data-type='method'><a href="module-dashboardController.html#~renderEditUserWid">renderEditUserWid</a></li><li data-type='method'><a href="module-dashboardController.html#~renderGetCatwayDetailsWid">renderGetCatwayDetailsWid</a></li><li data-type='method'><a href="module-dashboardController.html#~renderGetReservationDetailsWid">renderGetReservationDetailsWid</a></li></ul></li><li><a href="module-homeController.html">homeController</a><ul class='methods'><li data-type='method'><a href="module-homeController.html#~renderHome">renderHome</a></li></ul></li><li><a href="module-reservationsController.html">reservationsController</a><ul class='methods'><li data-type='method'><a href="module-reservationsController.html#~add">add</a></li><li data-type='method'><a href="module-reservationsController.html#~delete">delete</a></li><li data-type='method'><a href="module-reservationsController.html#~getAll">getAll</a></li><li data-type='method'><a href="module-reservationsController.html#~getAllOfCatway">getAllOfCatway</a></li><li data-type='method'><a href="module-reservationsController.html#~getbyId">getbyId</a></li><li data-type='method'><a href="module-reservationsController.html#~renderAddForm">renderAddForm</a></li></ul></li><li><a href="module-usersController.html">usersController</a><ul class='methods'><li data-type='method'><a href="module-usersController.html#~add">add</a></li><li data-type='method'><a href="module-usersController.html#~authenticate">authenticate</a></li><li data-type='method'><a href="module-usersController.html#~delete">delete</a></li><li data-type='method'><a href="module-usersController.html#~edit">edit</a></li><li data-type='method'><a href="module-usersController.html#~getById">getById</a></li><li data-type='method'><a href="module-usersController.html#~renderCreationPage">renderCreationPage</a></li><li data-type='method'><a href="module-usersController.html#~update">update</a></li></ul></li><li><a href="module-usersRoutes.html">usersRoutes</a></li></ul>
+    
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">services/catways.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>const Catway = require('../models/catway');
+
+/**
+ * @module CatwaysServices
+ */
+
+/**
+ * Fetch all catways from the database.
+ * 
+ * @async
+ * @function getAllCatways
+ * @returns {Promise&lt;Array>} A promise that resolves to an array of all catways.
+ * 
+ * @example
+ * const catways = await catwayService.getAllCatways();
+ * console.log(catways);
+ */
+exports.getAllCatways = async () => {
+    return await Catway.find();
+};
+
+/**
+ * Fetch a specific catway by its ID.
+ * 
+ * @async
+ * @function getCatwayById
+ * @param {String} id - The ID of the catway to fetch.
+ * @returns {Promise&lt;Object|null>} A promise that resolves to the catway object if found, or null if not.
+ * 
+ * @example
+ * const catway = await catwayService.getCatwayById('60c72b2f9f1b2c001c9a9e84');
+ * console.log(catway);
+ */
+exports.getCatwayById = async (id) => {
+    return await Catway.findById(id);
+};
+
+/**
+ * Add a new catway to the database.
+ * 
+ * @async
+ * @function addCatway
+ * @param {Object} catwayData - The data of the new catway to be created.
+ * @param {Number} catwayData.catwayNumber - The number identifying the catway.
+ * @param {String} catwayData.type - The type of catway ('long' or 'short').
+ * @param {String} catwayData.catwayState - The current state of the catway.
+ * @param {String} catwayData.boatName - The name of the boat assigned to the catway.
+ * @returns {Promise&lt;Object>} A promise that resolves to the newly created catway object.
+ * 
+ * @example
+ * const newCatway = await catwayService.addCatway({ catwayNumber: 1, type: 'long', catwayState: 'available', boatName: 'Poseidon' });
+ * console.log(newCatway);
+ */
+exports.addCatway = async (catwayData) => {
+    const newCatway = new Catway(catwayData);
+    return await newCatway.save();
+};
+
+/**
+ * Update an existing catway by its ID.
+ * 
+ * @async
+ * @function updateCatway
+ * @param {String} id - The ID of the catway to update.
+ * @param {Object} updateData - The data to update in the catway.
+ * @returns {Promise&lt;Object|null>} A promise that resolves to the updated catway object, or null if the catway doesn't exist.
+ * 
+ * @example
+ * const updatedCatway = await catwayService.updateCatway('60c72b2f9f1b2c001c9a9e84', { catwayState: 'occupied' });
+ * console.log(updatedCatway);
+ */
+exports.updateCatway = async (id, updateData) => {
+    return await Catway.findByIdAndUpdate(
+        { _id: id }, 
+        updateData, 
+        { 
+            new: true,            // Return the updated document
+            runValidators: true,  // Ensure schema validators are run
+            context: 'query'      // Ensure proper context for custom validators
+        }
+    );
+};
+
+/**
+ * Delete a catway by its ID.
+ * 
+ * @async
+ * @function deleteCatway
+ * @param {String} id - The ID of the catway to delete.
+ * @returns {Promise&lt;Object|null>} A promise that resolves to the deleted catway object, or null if the catway doesn't exist.
+ * 
+ * @example
+ * const deletedCatway = await catwayService.deleteCatway('60c72b2f9f1b2c001c9a9e84');
+ * console.log(deletedCatway);
+ */
+exports.deleteCatway = async (id) => {
+    return await Catway.findByIdAndDelete({ _id: id });
+};
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Tue Sep 24 2024 17:08:23 GMT+0200 (Central European Summer Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+<script src="scripts/search.js" defer></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails de la réservation</title>
+</head>
+<body>
+    <h1>Détails de la réservation</h1>
+    <p><strong>Nom du client:</strong> <%= reservation.clientName %></p>
+    <p><strong>Nom du bateau:</strong> <%= reservation.boatName %></p>
+    <p><strong>Numéro de catway:</strong> <%= reservation.catwayNumber %></p>
+    <p><strong>Check-In:</strong> <%= reservation.checkIn %></p>
+    <p><strong>Check-Out:</strong> <%= reservation.checkOut %></p>
+
+    <form action="/catways/id/reservations/<%= reservation.id %>?_method=DELETE" method="POST">
+        <button type="submit">Supprimer la réservation</button>
+    </form>
+    <a href="/catways/reservations/list">Liste de réservations</a><br>
+    <a href="/dashboard">Accéder au tableau de bord</a>
+</body>
+</html>

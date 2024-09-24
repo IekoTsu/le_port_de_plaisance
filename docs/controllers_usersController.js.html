@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>controllers/usersController.js - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <input type="text" id="nav-search" placeholder="Search" />
+    
+    
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-Catway.html">Catway</a></li><li><a href="module-CatwaysRoutes.html">CatwaysRoutes</a></li><li><a href="module-CatwaysServices.html">CatwaysServices</a><ul class='methods'><li data-type='method'><a href="module-CatwaysServices.html#~addCatway">addCatway</a></li><li data-type='method'><a href="module-CatwaysServices.html#~deleteCatway">deleteCatway</a></li><li data-type='method'><a href="module-CatwaysServices.html#~getAllCatways">getAllCatways</a></li><li data-type='method'><a href="module-CatwaysServices.html#~getCatwayById">getCatwayById</a></li><li data-type='method'><a href="module-CatwaysServices.html#~updateCatway">updateCatway</a></li></ul></li><li><a href="module-DashboardRoutes.html">DashboardRoutes</a></li><li><a href="module-HomeRoutes.html">HomeRoutes</a></li><li><a href="module-JwtMiddleware.html">JwtMiddleware</a><ul class='methods'><li data-type='method'><a href="module-JwtMiddleware.html#~checkJWT">checkJWT</a></li></ul></li><li><a href="module-Reservation.html">Reservation</a></li><li><a href="module-ReservationsRoutes.html">ReservationsRoutes</a></li><li><a href="module-ReservationsServices.html">ReservationsServices</a><ul class='methods'><li data-type='method'><a href="module-ReservationsServices.html#~creatReservation">creatReservation</a></li><li data-type='method'><a href="module-ReservationsServices.html#~deleteReservation">deleteReservation</a></li><li data-type='method'><a href="module-ReservationsServices.html#~getAllCatwayReservations">getAllCatwayReservations</a></li><li data-type='method'><a href="module-ReservationsServices.html#~getAllReservation">getAllReservation</a></li><li data-type='method'><a href="module-ReservationsServices.html#~getReservationById">getReservationById</a></li></ul></li><li><a href="module-User.html">User</a></li><li><a href="module-UsersServices.html">UsersServices</a><ul class='methods'><li data-type='method'><a href="module-UsersServices.html#~addUser">addUser</a></li><li data-type='method'><a href="module-UsersServices.html#~deleteUser">deleteUser</a></li><li data-type='method'><a href="module-UsersServices.html#~findUserById">findUserById</a></li><li data-type='method'><a href="module-UsersServices.html#~updateUser">updateUser</a></li></ul></li><li><a href="module-app.html">app</a></li><li><a href="module-catwaysController.html">catwaysController</a><ul class='methods'><li data-type='method'><a href="module-catwaysController.html#~add">add</a></li><li data-type='method'><a href="module-catwaysController.html#~delete">delete</a></li><li data-type='method'><a href="module-catwaysController.html#~edit">edit</a></li><li data-type='method'><a href="module-catwaysController.html#~getAll">getAll</a></li><li data-type='method'><a href="module-catwaysController.html#~getById">getById</a></li><li data-type='method'><a href="module-catwaysController.html#~renderAddforum">renderAddforum</a></li><li data-type='method'><a href="module-catwaysController.html#~update">update</a></li></ul></li><li><a href="module-dashboardController.html">dashboardController</a><ul class='methods'><li data-type='method'><a href="module-dashboardController.html#~renderDashboard">renderDashboard</a></li><li data-type='method'><a href="module-dashboardController.html#~renderDeleteCatwayWid">renderDeleteCatwayWid</a></li><li data-type='method'><a href="module-dashboardController.html#~renderDeleteReservationWid">renderDeleteReservationWid</a></li><li data-type='method'><a href="module-dashboardController.html#~renderDeleteUserWid">renderDeleteUserWid</a></li><li data-type='method'><a href="module-dashboardController.html#~renderEditCatwayWid">renderEditCatwayWid</a></li><li data-type='method'><a href="module-dashboardController.html#~renderEditUserWid">renderEditUserWid</a></li><li data-type='method'><a href="module-dashboardController.html#~renderGetCatwayDetailsWid">renderGetCatwayDetailsWid</a></li><li data-type='method'><a href="module-dashboardController.html#~renderGetReservationDetailsWid">renderGetReservationDetailsWid</a></li></ul></li><li><a href="module-homeController.html">homeController</a><ul class='methods'><li data-type='method'><a href="module-homeController.html#~renderHome">renderHome</a></li></ul></li><li><a href="module-reservationsController.html">reservationsController</a><ul class='methods'><li data-type='method'><a href="module-reservationsController.html#~add">add</a></li><li data-type='method'><a href="module-reservationsController.html#~delete">delete</a></li><li data-type='method'><a href="module-reservationsController.html#~getAll">getAll</a></li><li data-type='method'><a href="module-reservationsController.html#~getAllOfCatway">getAllOfCatway</a></li><li data-type='method'><a href="module-reservationsController.html#~getbyId">getbyId</a></li><li data-type='method'><a href="module-reservationsController.html#~renderAddForm">renderAddForm</a></li></ul></li><li><a href="module-usersController.html">usersController</a><ul class='methods'><li data-type='method'><a href="module-usersController.html#~add">add</a></li><li data-type='method'><a href="module-usersController.html#~authenticate">authenticate</a></li><li data-type='method'><a href="module-usersController.html#~delete">delete</a></li><li data-type='method'><a href="module-usersController.html#~edit">edit</a></li><li data-type='method'><a href="module-usersController.html#~getById">getById</a></li><li data-type='method'><a href="module-usersController.html#~renderCreationPage">renderCreationPage</a></li><li data-type='method'><a href="module-usersController.html#~update">update</a></li></ul></li><li><a href="module-usersRoutes.html">usersRoutes</a></li></ul>
+    
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">controllers/usersController.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>const userService = require('../services/users');
+const jwt = require('jsonwebtoken');
+const bcrypt = require('bcrypt');
+const User = require('../models/user');
+const SECRET_KEY = process.env.SECRET_KEY;
+
+/**
+ * @module usersController
+ */
+
+/**
+ * Get a user by ID.
+ * 
+ * @function getById
+ * @param {Object} req - The Express request object.
+ * @param {Object} res - The Express response object.
+ * @returns {void}
+ * 
+ * @example
+ * // Usage in route
+ * router.get('/:id', private.checkJWT, userController.getById);
+ */
+exports.getById = async (req, res) => {
+    const id = req.params.id;
+
+    try {
+        const user = await userService.findUserById(id);
+        if (user) {
+            return res.status(200).json(user);
+        }
+
+        return res.status(404).json({ message: 'Utilisateur non trouvé' });
+    } catch (error) {
+        return res.status(500).json({ message: 'Internal Server Error', error });
+    }
+};
+
+/**
+ * Add a new user and render the dashboard.
+ * 
+ * @function add
+ * @param {Object} req - The Express request object.
+ * @param {Object} res - The Express response object.
+ * @returns {void}
+ * 
+ * @example
+ * // Usage in route
+ * router.post('/', private.checkJWT, userController.add);
+ */
+exports.add = async (req, res) => {
+    const userData = {
+        name: req.body.name,
+        email: req.body.email,
+        password: req.body.password,
+    };
+
+    try {
+        let user = await userService.addUser(userData);
+        return res.render('dashboard/dashboard', { message: `L'utilisateur ${user.name}a été créé avec succès` });
+    } catch (error) {
+        if (error.name === 'ValidationError') {
+            const errors = Object.values(error.errors).map(e => e.message);
+            return res.status(400).render('error/error', { errors });
+        } else if (error.code === 11000) {
+            return res.status(400).render('error/error', { errors: ["Cet email existe déjà dans notre base de données"] });
+        }
+
+        return res.status(500).json({ message: 'Internal Server Error', error });
+    }
+};
+
+/**
+ * Render the user creation page.
+ * 
+ * @function renderCreationPage
+ * @param {Object} req - The Express request object.
+ * @param {Object} res - The Express response object.
+ * @returns {void}
+ * 
+ * @example
+ * // Usage in route
+ * router.get('/user/add', private.checkJWT, userController.renderCreationPage);
+ */
+exports.renderCreationPage = async (req, res) => {
+    res.render('users/create_user');
+};
+
+/**
+ * Update a user by ID and render the edit page.
+ * 
+ * @function update
+ * @param {Object} req - The Express request object.
+ * @param {Object} res - The Express response object.
+ * @returns {void}
+ * 
+ * @example
+ * // Usage in route
+ * router.put('/:id', private.checkJWT, userController.update);
+ */
+exports.update = async (req, res) => {
+    const id = req.params.id;
+
+    const updateData = {
+        name: req.body.name,
+        email: req.body.email,
+        password: req.body.password,
+    };
+
+    try {
+        const user = await userService.findUserById(id);
+
+        if (user) {
+            Object.keys(updateData).forEach((key) => {
+                if (!!updateData[key]) {
+                    user[key] = updateData[key];
+                }
+            });
+            await user.save();
+            return res.status(200).render('users/edit_user', { user, message: 'L\'utilisateur a été mis à jour avec succès' });
+        }
+
+        return res.status(404).json('Utilisateur non trouvé');
+    } catch (error) {
+        if (error.name === 'ValidationError') {
+            const errors = Object.values(error.errors).map(e => e.message);
+            return res.status(400).render('error/error', { errors });
+        }
+
+        return res.status(501).json(error);
+    }
+};
+
+/**
+ * Render the edit user page for a specific user by ID.
+ * 
+ * @function edit
+ * @param {Object} req - The Express request object.
+ * @param {Object} res - The Express response object.
+ * @returns {void}
+ * 
+ * @example
+ * // Usage in route
+ * router.get('/:id/edit', private.checkJWT, userController.edit);
+ */
+exports.edit = async (req, res) => {
+    const id = req.params.id;
+    try {
+        const user = await userService.findUserById(id);
+
+        if (!user) {
+            return res.status(404).render('error/error', { errors: ['Utilisateur non trouvé'] });
+        }
+
+        return res.render('users/edit_user', { user, message: null });
+    } catch (error) {
+        if (error.kind === "ObjectId") {
+            return res.status(404).render('error/error', { errors: ['Entrez un identifiant valide'] });
+        }
+
+        return res.status(501).json(error);
+    }
+};
+
+/**
+ * Delete a user by ID.
+ * 
+ * @function delete
+ * @param {Object} req - The Express request object.
+ * @param {Object} res - The Express response object.
+ * @returns {void}
+ * 
+ * @example
+ * // Usage in route
+ * router.delete('/:id', private.checkJWT, userController.delete);
+ */
+exports.delete = async (req, res) => {
+    const id = req.params.id;
+
+    try {
+        const user = await userService.deleteUser(id);
+        req.session.message = `L'utilisateur ${user.name} a été supprimé avec succès`;
+        return res.status(200).json({ message: req.session.message });
+    } catch (error) {
+        console.log(error);
+
+        if (error.kind === "ObjectId") {
+            return res.status(400).json({ errorKind: error.kind });
+        }
+
+        return res.status(501).json(error);
+    }
+};
+
+/**
+ * Authenticate a user and render the dashboard.
+ * 
+ * @function authenticate
+ * @param {Object} req - The Express request object.
+ * @param {Object} res - The Express response object.
+ * @returns {void}
+ * 
+ * @example
+ * // Usage in route
+ * router.post('/authenticate', userController.authenticate);
+ */
+exports.authenticate = async (req, res) => {
+    const { email, password } = req.body;
+
+    try {
+        let user = await User.findOne({ email: email }, '-__v -createdAt -updatedAt');
+
+        if (user) {
+            bcrypt.compare(password, user.password, function(err, response) {
+                if (response) {
+                    delete user._doc.password;
+
+                    const expireIn = 24 * 60 * 60;
+                    const token = jwt.sign({ user: user }, SECRET_KEY, { expiresIn: expireIn });
+
+                    res.cookie('authToken', token, { httpOnly: true, maxAge: expireIn * 1000 });
+                    return res.render('dashboard/dashboard');
+                }
+
+                if (err) {
+                    throw new Error(err);
+                }
+
+                return res.render('home/home', { message: 'mot de passe erroné, veuillez réessayer.' }); 
+            });
+        } else {
+            return res.render('home/home', { message: 'Identifiants erronés, veuillez réessayer.' });
+        }
+    } catch (error) {
+        return res.status(501).json(error);
+    }
+};
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Tue Sep 24 2024 17:08:23 GMT+0200 (Central European Summer Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+<script src="scripts/search.js" defer></script>
+
+
+
+</body>
+</html>

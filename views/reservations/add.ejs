@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créer une réservation</title>
+    <script>
+        function updateFormAction() {
+            const catwayId = document.getElementById('catway').value;
+            const form = document.getElementById('reservationForm');
+            form.action = `/catways/${catwayId}/reservations`;
+        }
+        
+        // Ensure the form action is set when the page loads
+        window.onload = function() {
+            updateFormAction(); // Set the form action when the page loads
+        };
+    </script>
+</head>
+<body>
+    <h1>Créer une réservation</h1>
+    <form id="reservationForm" action="/" method="POST">
+        
+        <label for="catway">Sélectionnez Catway:</label>
+        <select id="catway" name="catwayId" onchange="updateFormAction()" required>
+            <% catways.forEach(catway => { %>
+                <option value="<%= catway.id %>"><%= catway.boatName %></option>
+            <% }) %>
+        </select>
+
+        <label for="clientName">Nom du client:</label>
+        <input type="text" id="clientName" name="clientName" required>
+
+        <label for="checkIn">Date du check-In:</label>
+        <input type="date" id="checkIn" name="checkIn" required>
+
+        <label for="checkOut">Date du check-Out:</label>
+        <input type="date" id="checkOut" name="checkOut" required>
+
+        <button type="submit">Créer la réservation</button>
+    </form>
+    <a href="/catways/reservations/list">Liste de réservations</a><br>
+    <a href="/dashboard">Accéder au tableau de bord</a>
+</body>
+</html>

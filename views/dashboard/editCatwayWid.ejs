@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifier un catway</title>
+</head>
+<body>
+    <h1>Modifier un catway</h1>
+    <p>Entrez l'identifiant du catway</p>
+    <form id="catwayForm">
+        <label for="id"> Identifiant du catway </label>
+        <input type="text" id="id" name="id" required />
+        <button type="submit">Modifier le catway</button>
+    </form>
+    <a href="/dashboard">Retour au tableau de bord</a>
+
+    <script>
+        // Add a submit event listener to the form
+        document.getElementById('catwayForm').addEventListener('submit', function(event) {
+            event.preventDefault()
+            const catwayId = document.getElementById('id').value
+            if (catwayId) {
+                // Redirect the user to the "/:id/edit" URL
+                window.location.href = `/catways/${catwayId}/edit`
+            } else {
+                alert('Veuillez saisir un identifiant de catway valide')
+            }
+        });
+    </script>
+</body>
+</html> 
