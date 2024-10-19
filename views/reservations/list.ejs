@@ -12,11 +12,12 @@
     <% } else { %>
         <ul>
             <% reservations.forEach(reservation => { %>
-                <li>
+                <li style="border: 2px solid #000; padding: 4px;"> 
                     <strong>Client Name:</strong> <%= reservation.clientName %> <br>
                     <strong>Boat Name:</strong> <%= reservation.boatName %> <br>
                     <strong>Check-In:</strong> <%= reservation.checkIn %> <br>
                     <strong>Check-Out:</strong> <%= reservation.checkOut %> <br>
+                    <strong>Id:</strong> <%= reservation.id %>
                     <a href="/catways/id/reservations/<%= reservation.id %>">Voir plus de détails</a>
                 </li>
             <% }) %>

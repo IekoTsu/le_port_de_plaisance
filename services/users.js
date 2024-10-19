@@ -84,3 +84,18 @@ exports.updateUser = async (id, updateData) => {
 exports.deleteUser = async (id) => {
     return await User.findByIdAndDelete({ _id: id });
 };
+
+/**
+ * Fetch all users from the database.
+ * 
+ * @async
+ * @function getAllUsers
+ * @returns {Promise<Array>} A promise that resolves to an array of all users.
+ * 
+ * @example
+ * const users = await userService.getAllUsers();
+ * console.log(users);
+ */
+exports.getAllUsers = async () => {
+    return await User.find();
+}; 

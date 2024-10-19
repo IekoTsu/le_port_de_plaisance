@@ -115,7 +115,7 @@ router.put('/:id', privateMiddleware.checkJWT, userController.update);
  * @middleware {checkJWT} privateMiddleware.checkJWT
  * @group Users - Operations about users
  * @param {string} id.path.required - The user's ID
- * @returns {Object} 200 - An object containing the rendered edit user form
+ * @returns {Object} 200 - An object containing the rendered edit user form 
  * @returns {Object} 404 - User not found
  * @returns {Object} 500 - Internal Server Error
  * 
@@ -142,5 +142,24 @@ router.get('/:id/edit', privateMiddleware.checkJWT, userController.edit);
  * app.post('/users/authenticate', userController.authenticate);
  */
 router.post('/authenticate', userController.authenticate);
+
+/** 
+ * @group Users Routes - Operations related to users
+ * 
+ * Route to get a list of all users.
+ * 
+ * @name GetAllUsers
+ * @route {GET} /list/all
+ * @middleware {checkJWT} privateMiddleware.checkJWT
+ * @group Users - Operations about users
+ * @returns {Object} 200 - A list of user objects
+ * @returns {Object} 404 - No users found
+ * @returns {Object} 500 - Internal Server Error
+ * 
+ * @example
+ * // Usage
+ * app.get('/list/all', privateMiddleware.checkJWT, userController.getUsersList);
+ */
+router.get('/list/all',privateMiddleware.checkJWT, userController.getUsersList )
 
 module.exports = router;

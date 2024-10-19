@@ -178,10 +178,9 @@ exports.delete = async (req, res) => {
 
     try {
         const user = await userService.deleteUser(id);
-        req.session.message = `L'utilisateur ${user.name} a été supprimé avec succès`;
-        return res.status(200).json({ message: req.session.message });
+
+        return res.render('dashboard/dashboard', { message: `L'utilisateur ${user.name} a été supprimé avec succès` });
     } catch (error) {
-        console.log(error);
 
         if (error.kind === "ObjectId") {
             return res.status(400).json({ errorKind: error.kind });
@@ -234,3 +233,30 @@ exports.authenticate = async (req, res) => {
         return res.status(501).json(error);
     }
 };
+
+/**
+ * Fetch and display a list of all users.
+ * 
+ * @async
+ * @function getUsersList
+ * @param {Object} req - The Express request object.
+ * @param {Object} res - The Express response object.
+ * @returns {void}
+ * 
+ * @example
+ * // Usage in route
+ * router.get('/list', userController.getUsersList);
+ */
+exports.getUsersList = async (req, res) =>  {   
+    try {
+        const users = await userService.getAllUsers();
+        
+        if (!users || users.length === 0){
+            return res.status(404).render('dashboard/dashboard', { message: `Aucun utilisateur trouvé` });
+        }
+
+        return res.render('users/list_users', { users : users })
+    } catch (error) {
+        return res.status(501).json(error);
+    }
+}

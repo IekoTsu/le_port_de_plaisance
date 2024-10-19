@@ -16,9 +16,10 @@
     <a href="/catways/add">Créer un nouveau Catway</a>
     <ul>
         <% catways.forEach(catway => { %>
-            <li>
+            <li style="border: 2px solid #000; padding: 4px;">
                 <a href="/catways/<%= catway._id %>"><%= catway.boatName %> - <%= catway.catwayState %></a> |
-                <a href="/catways/<%= catway._id %>/edit">Modifier</a>
+                <strong>Id:</strong> <%= catway._id %>
+                <a href="/catways/<%= catway._id %>/edit">Modifier</a> 
             </li>
         <% }); %>
     </ul>
